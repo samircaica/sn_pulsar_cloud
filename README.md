@@ -20,15 +20,15 @@ If you don't have a free account, please follow the steps from [Quick start with
 
 After login, the first page you see after the login is the Organization, please click the newly  created Organization and then from the Dashboard,  proceed to create a new Instance.
 
-2.dashboard.png
-![Screen_Shot_2022-10-18_at_02-13-44.png](image/Screen_Shot_2022-10-18_at_02-13-44.png)
+
+![2.dashboard.png](images/2.dashboard.png)
 
 Select the deployment region from the list and click **CREATE FREE INSTANCE**, the process will take between 5\-10 minutes to create the cluster.
 
 When it finish, you will see the new Cluster details:
 
-3.cluster_details
-![Screen_Shot_2022-10-18_at_02-27-20.png](image/Screen_Shot_2022-10-18_at_02-27-20.png)
+
+![3.cluster_details.png](images/3.cluster_details.png)
 
 ## **3. Get the Key File**
 
@@ -48,8 +48,8 @@ From the left menu, click the **Service Accounts** link to download the Key File
 
 In this Cluster overview page, click **Connect to the Cluster** button
 
-4.connect_to_cluster.png
-![Screen_Shot_2022-10-18_at_02-35-39.png](image/Screen_Shot_2022-10-18_at_02-35-39.png)
+
+![4.connect_to_cluster.png](images/4.connect_to_cluster.png)
 
 and then follow the steps to configure the pulsar client locally. If you are using mac, set 
 
@@ -105,8 +105,8 @@ Click the new **Tenant** created and then click the **New Namespace** button.
 
 I created **tenant1** and **namespace1**:
 
-5.tenant_namespace
-![Screen_Shot_2022-10-18_at_02-54-45.png](image/Screen_Shot_2022-10-18_at_02-54-45.png)
+
+![5.tenant_namespace.png](images/5.tenant_namespace.png)
 
 On the left navigation pane, under **Resources**, click **Topics**, and then **New Topic**.
 
@@ -118,8 +118,8 @@ Configure the following properties and click **Confirm**
 
 My new topic is called my\-topic
 
-6.topic.png
-![Screen_Shot_2022-10-18_at_03-01-48.png](image/Screen_Shot_2022-10-18_at_03-01-48.png)
+
+![6.topic.png](images/6.topic.png)
 
 ## **6. Test pulsar terminal client**
 
@@ -182,8 +182,8 @@ Then from **File \> New \> Project** set the properties and click Create:
 - **Language**
 - **JDK**
 
-7.new_project.png
-![Screen_Shot_2022-10-18_at_09-29-20.png](image/Screen_Shot_2022-10-18_at_09-29-20.png)
+
+![7.new_project.png](images/7.new_project.png)
 
 ### **9.1 Set the pom.xml**
 
@@ -263,13 +263,14 @@ finally our pom.xml will look like:
 
 From the Project section we will expand **src \> main \> java** and with the secondary button of the mouse we will select **New** and click **Package** to create a new Java package in our project called **[org.sn.pulsar](http://org.sn.pulsar)** and press Enter:
 
-8.new_package.png
-![Screen_Shot_2022-10-18_at_09-39-15.png](image/Screen_Shot_2022-10-18_at_09-39-15.png)
-8.1.new_package_name.png
-![Screen_Shot_2022-10-18_at_09-40-51.png](image/Screen_Shot_2022-10-18_at_09-40-51.png)
+
+![8.new_package.png](images/8.new_package.png)
+
+![8.1.new_package_name.png](images/8.1.new_package_name.png)
 
 Now, we will proceed to create the Java Producer class. As we did to create the package, this time with the mouse secondary button, we will select **New \> Java Class** and we will select **Class**  and named it **PulsarProducer.**
-![Screen_Shot_2022-10-18_at_09-44-29.png](image/Screen_Shot_2022-10-18_at_09-44-29.png)
+
+![8.2java_class.png](images/8.2java_class.png)
 
 Our class is empty, and we need to create the code, first we need to write the main method with 3 variables:
 
@@ -381,9 +382,9 @@ Let's test it. First, to check if the messages are written, we will start a cons
 
 To compile and execute our Java Producer, we will click over the class code with the mouse secondary button, and click **Run 'PulsarProducer.main\(\)'**
 
-9.compile.png
-![Screen_Shot_2022-10-18_at_10-15-26.png](image/Screen_Shot_2022-10-18_at_10-15-26.png)
+
+![9.compile.png](images/9.compile.png)
 
 After a while, if everything is ok we will see from the Pulsar consumer the messages written:
-10.consumer_console.png
-![Screen_Shot_2022-10-18_at_10-16-30.png](image/Screen_Shot_2022-10-18_at_10-16-30.png)
+
+![10.consumer_console.png](images/10.consumer_console.png)
